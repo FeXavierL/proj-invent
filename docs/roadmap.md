@@ -5,7 +5,7 @@
 - [x] Criar estrutura do projeto
 - [x] Modelar Dispositivo
 - [ ] Cadastro
-- [ ] Listagem
+- [X] Listagem
 - [ ] Busca
 - [ ] Excel
 - [ ] Interface

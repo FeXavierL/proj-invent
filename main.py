@@ -1,6 +1,6 @@
-
 from datetime import date
 from models.dispositivo import Dispositivo
+from services.inventario import Inventario
 
 notebook = Dispositivo(
     numero_patrimonio="MHG-005", 
@@ -33,6 +33,17 @@ celular = Dispositivo(
     data_compra=date.today()
 )
 
-print(notebook)
-print()
-print(celular)
+inventario = Inventario()
+
+try: 
+    inventario.adicionar(notebook)
+    print("Notebook adicionado com sucesso.")
+except ValueError as erro:
+    print(f"Erro: {erro}")
+
+try:
+    inventario.adicionar(celular)
+    print("Celular adicionado com sucesso.")    
+except ValueError as erro:
+    print(f"Erro: {erro}")
+    
