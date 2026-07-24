@@ -16,4 +16,4 @@
 - IMEI1
 - IMEI2
 - Status
-- Compra
+- Data Compra
