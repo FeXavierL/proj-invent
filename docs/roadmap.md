@@ -6,7 +6,7 @@
 - [x] Modelar Dispositivo
 - [ ] Cadastro
 - [X] Listagem
-- [ ] Busca
+- [X] Busca
 - [ ] Excel
 - [ ] Interface
 
