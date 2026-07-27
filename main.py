@@ -40,10 +40,16 @@ try:
     print("Notebook adicionado com sucesso.")
 except ValueError as erro:
     print(f"Erro: {erro}")
+    
+try: 
+    inventario.adicionar(notebook)
+    print("Notebook adicionado com sucesso.")
+except ValueError as erro:
+    print(f"Erro: {erro}")
+
 
 try:
     inventario.adicionar(celular)
     print("Celular adicionado com sucesso.")    
 except ValueError as erro:
     print(f"Erro: {erro}")
-    
