@@ -15,3 +15,18 @@
 - [ ] Banco de Dados (excel)
 - [ ] Relatórios PDF
 - [ ] Dashboard
+
+                Interface (Tkinter)
+                        │
+                        ▼
+                Inventario (Service)
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+ adicionar()      remover()      editar()
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+              Excel (Persistência)
+                       │
+                       ▼
+                 inventario.xlsx
