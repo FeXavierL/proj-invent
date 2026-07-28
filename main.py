@@ -73,8 +73,9 @@ except ValueError as erro:
 
 print(inventario.listar())'''
 
-try:
-    inventario.buscar_por_usuario("João")
-    print({"Dispositivos do usuário João": inventario.buscar_por_usuario("João")})
-except ValueError as erro:
-    print(f"Erro: {erro}")
+
+resultado = inventario.buscar_por_usuario("João")
+print(f"Dispositivos do usuário João: {resultado}")
+
+
+
