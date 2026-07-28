@@ -22,7 +22,7 @@ celular = Dispositivo(
     numero_patrimonio="MHG-006", 
     equipamento="Samsung Galaxy S21", 
     numero_serie="RQ5123ASFG6", 
-    usuario="Maria", 
+    usuario="João", 
     tipo="Celular", 
     linhas_moveis="11995922753",
     condicoes_acessorios="Novo, com carregador", 
@@ -41,15 +41,40 @@ try:
 except ValueError as erro:
     print(f"Erro: {erro}")
     
-try: 
-    inventario.adicionar(notebook)
-    print("Notebook adicionado com sucesso.")
-except ValueError as erro:
-    print(f"Erro: {erro}")
-
 
 try:
     inventario.adicionar(celular)
     print("Celular adicionado com sucesso.")    
+except ValueError as erro:
+    print(f"Erro: {erro}")
+
+print(inventario.listar())
+
+'''try:
+    inventario.remover("MHG-005")
+    print("Dispositivo removido com sucesso.")
+except ValueError as erro:
+    print(f"Erro: {erro}")
+
+print(inventario.listar())'''
+
+'''try:
+    inventario.editar(
+        numero_patrimonio="MHG-005",
+        novo_usuario="Carlos",
+        novas_condicoes_acessorios="Usado, sem carregador",
+        nova_data_envio=date(2025, 6, 15),
+        novo_status="Em manutenção"
+    )
+    print("Dispositivo editado com sucesso.")
+
+except ValueError as erro:
+    print(f"Erro: {erro}")
+
+print(inventario.listar())'''
+
+try:
+    inventario.buscar_por_usuario("João")
+    print({"Dispositivos do usuário João": inventario.buscar_por_usuario("João")})
 except ValueError as erro:
     print(f"Erro: {erro}")
